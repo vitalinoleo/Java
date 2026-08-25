@@ -5,7 +5,7 @@ public class CalcularVelocidadeMedia {
         System.out.println("====CALCULO DA VELOCIDADE MÉDIA====");
         double distanciaPercorrida = 133;
         System.out.println("A distancia percorrida foi de " + distanciaPercorrida + " km");
-        double tempoGasto = 1.4;
+        double tempoGasto = 0.5;
         System.out.println("O tempo gasto foi de " + tempoGasto + " Horas");
         double velocidadeMedia = distanciaPercorrida / tempoGasto;
         System.out.println("Para encontrarmos a velocidade média dividmos a distância (" + distanciaPercorrida + ") pelo tempo gasto no percurso (" + tempoGasto + ").");
