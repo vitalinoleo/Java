@@ -7,15 +7,6 @@ public class estruturaSwitch {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-
-        // criando constantes para cada opção 
-        final int domingo = 1;
-        final int segunda = 2;
-        final int terça = 3;
-        final int quarta = 4;
-        final int quinta = 5;
-        final int sexta = 6;
-        final int sabado = 7;
         // perguntas 
         System.out.println("OBS: Responda de acordo com o exemplo a baixo:"
                 + "\nDomingo = 1"
@@ -28,7 +19,7 @@ public class estruturaSwitch {
                 + "\nQual é o dia da semana?");
                 // criando uma variavel no main para eu poder usar dentro do if e também dentro do switch case 
                 int diaSemana;
-                // criando um if para que se o usuário dar uma String ou double de resposta 
+                // criando um if para que se o usuário dar uma String ou double de resposta ele mostra  erro. 
         if (entrada.hasNextInt()) {
             diaSemana = entrada.nextInt();
             // caso a resposta seja int ele guarda a informação 
