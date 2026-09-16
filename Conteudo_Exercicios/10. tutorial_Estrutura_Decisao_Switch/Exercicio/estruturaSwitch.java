@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+/**
+ * estruturaSwitch
+ */
+public class estruturaSwitch {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int domingo = 1;
+        int segunda = 2;
+        int terça = 3;
+        int quarta = 4;
+        int quinta = 5;
+        int sexta = 6;
+        int sabado = 7;
+
+        System.out.println("OBS: Responda de acordo com o exemplo a baixo:"
+                + "\nDomingo = 1"
+                + "\nSegunda-Feira = 2"
+                + "\nTerça-Feira = 3"
+                + "\nQuarta-Feira = 4"
+                + "\nQuinta-Feira = 5"
+                + "\nSexta-Feira = 6"
+                + "\nSabado = 7"
+                + "\nQual é o dia da semana?");
+
+                int diaSemana;
+        if (entrada.hasNextInt()) {
+            diaSemana = entrada.nextInt();
+        } else {
+            System.out.println("Essa opção não exoste. "
+                    + "\nDigite um numero, por favor!!");
+                    return ;
+        }
+        switch (diaSemana) {
+            case 1:
+                System.out.println("Estamos no domingo.");
+
+                break;
+            case 2:
+                System.out.println("Estamos na segunda feira.");
+
+                break;
+
+            case 3:
+                System.out.println("Estamos na terça feira.");
+
+                break;
+
+            case 4:
+                System.out.println("Estamos na quarta feira.");
+
+                break;
+
+            case 5:
+                System.out.println("Estamos na quinta-feira.");
+
+                break;
+
+            case 6:
+                System.out.println("Estamos na sexta feira.");
+
+                break;
+
+            case 7:
+                System.out.println("Estamos no sabado.");
+
+                break;
+            default:
+                System.out.println("Essa opção não está válida."
+                    + "\nEscolha uma opção de 1 ao 7."
+                );
+                break;
+        }
+
+    }
+}
